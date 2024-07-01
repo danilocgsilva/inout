@@ -1,0 +1,16 @@
+{
+    "name": "danilocgsilva/inout",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Danilocgsilva\\Inout\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Danilo Silva",
+            "email": "contact@danilocgsilva.me"
+        }
+    ],
+    "require": {}
+}
