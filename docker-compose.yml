@@ -1,0 +1,18 @@
+services:
+  in_out:
+    build:
+      context: .
+    container_name: in_out
+    volumes:
+      - './www:/var/www'
+      - './.ssh/:/root/.ssh'
+    ports:
+      - '2010:80'
+    working_dir: /var/www
+  in_out_db:
+    image: 'mysql:latest'
+    container_name: in_out_db
+    environment:
+      - MYSQL_ROOT_PASSWORD=inoutstrongpassword
+    ports:
+      - '3399:3306'
